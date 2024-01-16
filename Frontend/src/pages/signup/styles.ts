@@ -17,6 +17,11 @@ export const Container = styled.div`
 
         font-family: 'Roboto', sans-serif;
     }
+
+    @media (max-width: 794px){
+        flex-direction: column;
+        background-color: ${({theme}) => theme.COLORS.Dark400};
+    }
 `
 
 export const Form = styled.form`
@@ -58,6 +63,11 @@ export const Form = styled.form`
 
     & h1 {
         text-align: center;
+    }
+
+    @media (max-width: 794px){
+        background-color: ${({theme}) => theme.COLORS.Dark400};
+        padding: 0px;
     }
 
 `
